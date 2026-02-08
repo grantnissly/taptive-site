@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About" description="Learn about Grant Nissly and Taptive's approach to Bitcoin growth strategy">
+  <Header />
+
+  <main class="flex-1">
+    <section class="max-w-4xl mx-auto px-6 py-24 md:py-32">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight">About</h1>
+
+      <div class="mt-12 prose prose-lg max-w-none">
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="md:col-span-2 space-y-6 text-gray-600 leading-relaxed">
+            <p class="text-xl text-gray-900">
+              Taptive is a growth agency built specifically for the Bitcoin economy.
+            </p>
+
+            <p>
+              Founded by Grant Nissly, Taptive helps Bitcoin-native companies grow through
+              narrative-first strategy. In a space defined by technical innovation and
+              ideological commitment, the companies that win are the ones who can tell
+              their story clearly and reach the right people.
+            </p>
+
+            <p>
+              We've worked with some of the most ambitious projects in the Bitcoin ecosystem,
+              from DeFi protocols to foundations to community-driven initiatives. Our approach
+              combines strategic business development, go-to-market planning, and community
+              building—all tailored to how the Bitcoin economy actually works.
+            </p>
+
+            <p>
+              The Bitcoin economy is different. It has its own culture, its own distribution
+              channels, and its own way of building trust. Generic growth playbooks don't work
+              here. That's why Taptive exists—to help great projects find their path to growth
+              in this unique ecosystem.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <div class="bg-gray-50 p-6 rounded-xl">
+              <h3 class="font-semibold text-lg">Grant Nissly</h3>
+              <p class="text-sm text-gray-500 mt-1">Founder</p>
+              <div class="mt-4 space-y-3">
+                <a
+                  href="https://x.com/grantnissly"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  @grantnissly
+                </a>
+                <a
+                  href="https://grantt.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                  Substack
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-24">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">What we believe</h2>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <h3 class="font-semibold text-lg">Narrative-first growth</h3>
+            <p class="text-gray-600 leading-relaxed">
+              In the Bitcoin economy, story precedes adoption. Before people use your product,
+              they need to believe in what you're building and why. We help companies craft
+              and communicate that narrative.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="font-semibold text-lg">Ecosystem-native thinking</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Bitcoin has its own culture and community dynamics. Growth strategies that work
+              elsewhere often fail here. We understand how the Bitcoin ecosystem actually
+              operates and build strategies that fit.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="font-semibold text-lg">Relationships over transactions</h3>
+            <p class="text-gray-600 leading-relaxed">
+              The Bitcoin space is built on trust and relationships. We focus on building
+              genuine connections that create long-term value, not short-term metrics.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="font-semibold text-lg">Substance over hype</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We believe in building real things for real people. Our strategies focus on
+              sustainable growth and genuine value creation, not attention-grabbing tactics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Ready to grow?</h2>
+        <p class="mt-4 text-gray-600 max-w-lg mx-auto">
+          Let's talk about how Taptive can help your Bitcoin-native company reach its potential.
+        </p>
+        <a
+          href="/contact"
+          class="mt-8 inline-flex items-center justify-center px-6 py-3 bg-bitcoin text-white font-medium rounded-lg hover:bg-bitcoin-dark transition-colors"
+        >
+          Get in touch
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
