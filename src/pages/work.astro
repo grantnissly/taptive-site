@@ -2,125 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-
-const clients = [
-  {
-    name: "Stacks Foundation",
-    description: "Strategic growth initiatives for the Stacks ecosystem, connecting builders with resources and expanding the Bitcoin Layer 2 narrative.",
-    services: ["BD/Sales", "GTM Strategy", "Community"]
-  },
-  {
-    name: "Hermetica",
-    description: "Go-to-market strategy and business development for Bitcoin-native yield products, positioning Hermetica within the growing BTC DeFi landscape.",
-    services: ["GTM Strategy", "BD/Sales"]
-  },
-  {
-    name: "Bitflow",
-    description: "Community building and growth strategy for the leading DEX on Stacks, helping establish market presence and user adoption.",
-    services: ["Community", "GTM Strategy"]
-  },
-  {
-    name: "STX City",
-    description: "Strategic support for community-driven initiatives, helping amplify the voice of Stacks ecosystem participants.",
-    services: ["Community", "BD/Sales"]
-  }
-];
 ---
 
-<Layout title="Work" description="Past clients and projects Taptive has worked with in the Bitcoin ecosystem">
+<Layout title="Clients">
   <Header />
 
-  <main class="flex-1">
-    <section class="max-w-4xl mx-auto px-6 py-24 md:py-32">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Our Work</h1>
-      <p class="mt-6 text-lg text-gray-600 max-w-2xl">
-        We've partnered with some of the most innovative projects in the Bitcoin ecosystem.
-        Here's a look at who we've worked with and how we've helped them grow.
-      </p>
-    </section>
-
-    <section class="border-t border-gray-100">
-      {clients.map((client, index) => (
-        <div class:list={["border-b border-gray-100", index % 2 === 1 && "bg-gray-50"]}>
-          <div class="max-w-4xl mx-auto px-6 py-16">
-            <div class="grid md:grid-cols-3 gap-8 items-start">
-              <div class="md:col-span-2">
-                <h2 class="text-2xl font-bold tracking-tight">{client.name}</h2>
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                  {client.description}
-                </p>
-              </div>
-              <div>
-                <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide">Services</h3>
-                <div class="mt-3 flex flex-wrap gap-2">
-                  {client.services.map((service) => (
-                    <span class="inline-flex px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-full">
-                      {service}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <section class="bg-gray-900 text-white py-24">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">How we work</h2>
-
-        <div class="mt-12 grid md:grid-cols-3 gap-8">
-          <div class="space-y-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-bitcoin rounded-lg text-white font-bold">
-              1
-            </div>
-            <h3 class="font-semibold text-lg">Understand</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              We start by deeply understanding your product, your market position, and your
-              goals. No two projects are the same.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-bitcoin rounded-lg text-white font-bold">
-              2
-            </div>
-            <h3 class="font-semibold text-lg">Strategize</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              We develop a narrative-first growth strategy tailored to your specific
-              situation and the dynamics of the Bitcoin ecosystem.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <div class="w-10 h-10 flex items-center justify-center bg-bitcoin rounded-lg text-white font-bold">
-              3
-            </div>
-            <h3 class="font-semibold text-lg">Execute</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              We work alongside your team to implement the strategy, building relationships
-              and driving real results.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-24">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Let's work together</h2>
-        <p class="mt-4 text-gray-600 max-w-lg mx-auto">
-          Building something in the Bitcoin ecosystem? We'd love to hear about it.
-        </p>
-        <a
-          href="/contact"
-          class="mt-8 inline-flex items-center justify-center px-6 py-3 bg-bitcoin text-white font-medium rounded-lg hover:bg-bitcoin-dark transition-colors"
-        >
-          Get in touch
-        </a>
-      </div>
-    </section>
+  <main class="max-w-2xl mx-auto px-5">
+    <h1 class="mb-4">Clients</h1>
+    <p class="mb-4">
+      Taptive is focused on the Stacks ecosystem. Learn more about <a href="https://stacks.org/welcome-to-stacks" target="_blank" rel="noopener noreferrer">Stacks</a>.
+    </p>
+    <p>
+      Through supporting the Stacks Foundation, Taptive has worked with many companies in the Stacks economy, like Hermetica, Stacking DAO, and Bitflow.
+    </p>
   </main>
 
   <Footer />
