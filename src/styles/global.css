@@ -2,6 +2,7 @@
 
 @theme {
   --color-paper: #f5f3ed;
+  --color-accent: #c97d3c;
   --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
